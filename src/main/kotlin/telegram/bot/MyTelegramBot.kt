@@ -69,7 +69,7 @@ fun main() {
         val botsApi = TelegramBotsApi(DefaultBotSession::class.java)
         botsApi.registerBot(MyTelegramBot())
     } catch (e: Exception) {
-        // Handle webhook removal error
+        // fuck let me try this shit again
         if (e.message?.contains("Error deleting webhook") == true) {
             println("Webhook was not set, proceeding with long polling...")
             val botsApi = TelegramBotsApi(DefaultBotSession::class.java)
