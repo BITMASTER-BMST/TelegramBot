@@ -62,7 +62,7 @@ fun main() {
     val botToken = BotConfigToken.botToken.toString()
 
     try {
-        // Delete the webhook if it's set
+        // Deleting the webhook if it's set
         val deleteWebhookUrl = "https://api.telegram.org/bot$botToken/deleteWebhook"
         sendGetRequest(deleteWebhookUrl)
 
