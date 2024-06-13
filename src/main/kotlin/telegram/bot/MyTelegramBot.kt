@@ -79,7 +79,7 @@ class MyTelegramBot : TelegramLongPollingBot() {
     private fun sendTapCount(chatId: Long, taps: String) {
         val message = SendMessage()
         message.chatId = chatId.toString()
-        message.text = "You have tapped the screen $taps times."
+        message.text = "We are delighted to have you\nOur social handles will be provided to this bot\nWe are on under heavy construction, yet almost done with the game integration"
 
         try {
             execute(message)
