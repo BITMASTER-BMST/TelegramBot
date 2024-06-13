@@ -13,7 +13,7 @@ class MyTelegramBot : TelegramLongPollingBot() {
 
     private val botToken = BotConfigToken.botToken.toString()
     private val botUsername = BotConfigToken.botUsername.toString()
-    private val sentWelcomeMessages = mutableSetOf<Long>() // Store chat IDs to avoid duplicate welcome messages
+    private val sentWelcomeMessages = mutableSetOf<Long>()
 
     override fun getBotToken(): String = botToken
 
